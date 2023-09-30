@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MyPortfolio</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/d71c8d5c8e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+    <nav>
+    	<img src="images/logo5.jpg" class="logo">
+    	<ul>
+    		<li><a href="#">Home</a>
+    		<li><a href="#about">About</a>
+    		<li><a href="#Services">Services</a>
+    		<li><a href="#portfolio">Portfolio</a>
+    		<li><a href="#contact">Contact</a>
+    	</ul>
+    </nav>	
+    <div class="header-text">
+    	<p>My Portfolio,</p>
+    	<h1>Hi, I'm <span>Miguelito</span><br>Tajuda</h1> 
+           </div>
+     </div>
+ </div>
+ <!-- -----------about---------- -->
+ <div id="about"></div>
+      <div class="container">
+      	 <div class="row">
+      	 	<div class="about-col-1">
+      	 		<img src="images/user1.jpg">
+      	 	</div>
+      	 	<div class="about-col-2">
+      	 		<h1 class="sub-title">About Me</h1>
+      	 		<p>This particular website is a midterm project for my Web Systems and Technologies subject.</p>
+                <p>You may click on any button on the left panel to go to a section that you fancy. Its contents are just random things I thought would be nice to put into the web or just for the sake of having a content to give.</p>
+                <p>So knock yourself out watching and reading any content I've put into this project. Hope you enjoyed your visit!</p></p>
+      	 	<div class="tab-titles">
+      	 		<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+      	 		<p class="tab-links" onclick="opentab('experience')">Experience</p>
+      	 		<p class="tab-links" onclick="opentab('education')">Education</p>
+      	 	</div>
+      	 	<div class="tab-contents active-tab" id="skills">
+      	 		<ul>
+      	 			<li><span>Electrical</span><br>EIM NC2 PASSER</li>
+      	 			<li><span>Welder</span><br>SMAW NC2 PASSER</li>
+               </ul>
+           </div>
+            <div class="tab-contents" id="experience">
+      	 		<ul>
+      	 			<li><span>Three Months</span><br>Helper</li>
+      	 			<li><span>Two Months</span><br>Helper</li>
+               </ul>
+        </div>
+            <div class="tab-contents" id="education">
+      	 		<ul>
+      	 			<li><span>BSIT Student</span><br>Currently Studying</li>
+      	 			<li><span>SHS Graduate</span><br>Jasaan Mis.Or</li>
+               </ul>
+        </div>
+        </div>
+     </div>
+ </div>
+
+
+
+
+<!-- -----------services---------- -->
+<div id="Services">
+	<div class="container">
+		  <h1 class="sub-title">My Services</h1>
+		  <div class="services-list">
+		  	<div>
+		  		<i class="fa-solid fa-code"></i>
+		  		<h2>Welder Helper</h2>
+		  		<p>Assembling pieces of metal or repairing damage in components using heavy machinery that emits high heat, melting the metals into shape.</p>
+		  	    
+            </div>
+            <div>
+            	<i class="fa-solid fa-crop"></i>
+		  		<h2>Electrical Helper</h2>
+		  		<p>Connecting or disconnecting electricity supply wiring to and from electrical equipment; or. installing, removing, adding, testing, replacing, repairing, altering or maintaining electrical equipment or an electrical installation.</p>
+		  	    
+            </div>
+            
+
+		  	</div>
+
+	</div>
+<! -- ------------portfolio---------- -->
+<div id="portfolio">
+     <div class="container">
+     	<h1 class="sub-title">My Work</h1>
+     	<div class="work-list">
+     		<div class="work">
+     			<img src="images/1.jpg">
+                
+</div>
+           <div class="work">
+     			<img src="images/3.jpg">
+</div>
+        <div class="work">
+                <img src="images/5.jpg">
+</div>
+</div>
+    <a href="#" class="btn">Back to top</a>
+
+
+<!-- -------------contact----------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left" >
+                <h1 style-align:left; class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i> contact@example.com</p>
+                <p><i class="fa-solid fa-phone"></i> 09513620262</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i>
+                        <a href=""><i class="fa-brands fa-twitter"></i>
+                            <a href=""><i class="fa-brands fa-linkedin"></i>
+                                <a href=""><i class="fa-brands fa-instagram"></i>
+ </div>
+</div>
+
+
+<script>
+	
+
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      
+      function opentab(tabname){
+      	for(tablink of tablinks){
+      		tablink.classList.remove("active-link");
+      	}
+      	for(tabcontent of tabcontents){
+      		tabcontent.classList.remove("active-tab");
+      	}
+      	event.currentTarget.classList.add("active-link");
+      	document.getElementById(tabname).classList.add("active-tab");
+      }
+
+</script>
+</body>
+</html>
